@@ -1,0 +1,216 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% Used by:
+% Shubham Mishra (smishra99.iitkgp@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Shubham}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Mishra}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge UG student, CSE IIT Kharagpur} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.300\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Suri, West Bengal, India}\\
+	\icon{Phone}{12}{+91 76021 00770}\\
+	\icon{At}{12}{\href{mailto:smishra99.iitkgp@gmail.com}{smishra99.iitkgp@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://grapheo12.github.io}{grapheo12.github.io}}\\
+	\icon{Github}{12}{\href{https://github.com/grapheo12}{github.com/grapheo12}}\\
+	\icon{Facebook}{12}{\href{https://facebook.com/grapheo12}{grapheo12}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Personal Information}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	I am an aspiring developer who tries to solve world's challenges through code.
+	My primary interest is in Backend engineering, System Design and Security.
+	I am quick at learning new things and I prefer hands-on experience through projects.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Python}{80}
+		\baritem{C/C++}{70}
+		\baritem{JavaScript}{60}
+		\baritem{HTML}{70}
+		\baritem{CSS}{60}
+		\baritem{MySQL}{60}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{4/Linux, 5/Git, 6/Flask, 5/SQLAlchemy, 4/Node, 3/React, 3/Materialize, 2/Heroku}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Projects \& experiences}
+
+\begin{entrylist}
+	\entry
+		{2019}
+		{Backend developer}
+		{IIT Technology Ambit}
+		{$\bullet$ Created the DB Schema, Models and Services\\
+		 $\bullet$ Created the Continuous Deployment System from scratch\\
+		 $\bullet$ Project Links:  \url{https://github.com/iit-technology-ambit}, \url{https://iit-techambit.in}\\
+		 \texttt{Python}\slashsep\texttt{Flask}\slashsep\texttt{Multiprocessing}\slashsep\texttt{Webhooks}}
+	\entry
+		{2019}
+		{Flask-GDrive}
+		{}
+		{$\bullet$ Flask plugin that fetches static content from Google Drive\\ 
+		 $\bullet$ Provides DB like support using Google Sheets\\
+		 $\bullet$ Published in PyPI: \url{https://pypi.org/project/Flask-GDrive/}\\
+		 \texttt{Python}\slashsep\texttt{Flask}\slashsep\texttt{Google API}}
+	\entry
+		{2019}
+		{MFQP}
+		{MetaKGP}
+		{$\bullet$ Question Paper searching site for IIT KGP\\ 
+		 $\bullet$ Created a PDF question scraper and organizer based on BFS\\
+		 $\bullet$ Current maintainer\\
+		 \texttt{Python}\slashsep\texttt{BeautifulSoup}}
+	\entry
+		{2019}
+		{lmake}
+		{}
+		{$\bullet$ Live compilation facility for code under debug\\ 
+		 $\bullet$ Github repo: \url{https://github.com/grapheo12/lmake}\\
+		\texttt{Python}\slashsep\texttt{os}}
+	\entry
+		{2019}
+		{Git \& Github Workshop}
+		{Kharagpur Open Source Society}
+		{$\bullet$ Taught a class of 60 students how to use Git\\
+		\texttt{Git}\slashsep\texttt{Github}}
+	\entry
+		{2019}
+		{CSAW ESC 2019}
+		{SEAL, IIT Kharagpur}
+		{$\bullet$ Learnt about firmware reverse engineering\\ 
+		 $\bullet$ Helped the team in qualification stage\\
+		\texttt{Ghidra}}
+	\entry
+		{2017}
+		{Illus}
+		{}
+		{$\bullet$ Minimal Drawing App in Python\\ 
+		\texttt{Python}\slashsep\texttt{Tkinter}}
+\end{entrylist}
+\break
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2018 -- 2022}
+		{B.Tech. (Hons.) in Computer Science \& Engineering}
+		{IIT Kharagpur}
+		{$\bullet$ Current CGPA: 9.91/10.0\\
+		 $\bullet$ CSE Courses taken: Programming and Data Structures, Algorithms-I, Discrete Structures}
+	\entry
+		{2018}
+		{WBCHSE [PCM Stream]}
+		{Bk.T.P.P. Prabir Sengupta Vidyalaya}
+		{$\bullet$ Obtained marks: 474/500}
+	\entry
+		{2016}
+		{WBBSE}
+		{St. Andrew's High School}
+		{$\bullet$ Obtained marks: 674/500}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{English} - Proficient\\
+	\textbf{Bengali} - Native\\
+	\textbf{Hindi} - Proficient
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I love reading story books, listening to music and, of course, coding.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Campus Activities}
+	
+	I am part of NSS and Kharagpur Open Source Society (KOSS).
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
